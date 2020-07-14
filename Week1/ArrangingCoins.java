@@ -3,7 +3,7 @@ You have a total of n coins that you want to form in a staircase shape, where ev
 
 Given n, find the total number of full staircase rows that can be formed.
 
-n is a non-negative integer and fits within the range of a 32-bit signed integer.
+n is a non-negative integer and fits within the range of a 32-bit signed integer.                  
 
 */
 
