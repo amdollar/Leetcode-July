@@ -1,0 +1,31 @@
+    /**
+    * Given an input string, reverse the string word by word.
+    *
+    *Input: "the sky is blue"
+    * Output: "blue is sky the"
+    */
+    
+import java.util.Stack;
+import java.util.StringTokenizer;
+
+public class ReverseWords {
+	public static void main(String[] args) {
+		String line = new String("  hello world!  ");
+		System.out.println(reverseWords(line));
+	}
+
+	public static String reverseWords(String s) {
+		Stack<String> stack = new Stack<>();
+		StringTokenizer st = new StringTokenizer(s);
+		while (st.hasMoreTokens()) {
+			stack.push(st.nextToken());
+		}
+		StringBuilder sb = new StringBuilder();
+		while (!stack.isEmpty()) {
+			sb.append(stack.pop() + " ");
+		}
+
+		return sb.toString().trim();
+
+	}
+}
