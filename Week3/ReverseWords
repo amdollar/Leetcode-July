@@ -8,7 +8,7 @@
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class ReverseWords {
+public class ReverseWords {  
 	public static void main(String[] args) {
 		String line = new String("  hello world!  ");
 		System.out.println(reverseWords(line));
