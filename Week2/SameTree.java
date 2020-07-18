@@ -20,7 +20,9 @@ public class SameTree {
 		System.out.println(sameTrees(root, root2));
 	}
 
+	
 	private static boolean sameTrees(TreeNode root, TreeNode root2) {
+		
 		if (root == null && root2 == null)
 			return true;
 		else if (root == null || root2 == null)
